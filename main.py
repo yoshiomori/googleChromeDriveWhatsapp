@@ -42,7 +42,7 @@ def run_selenium(name):
             assert isinstance(element, WebElement)
             if element.text == 'online':
                 now = datetime.datetime.now()
-                s = now.strftime('%A %d/%B %H:%M:%S')
+                s = now.strftime('%A %d/%m/%Y %H:%M:%S')
                 print(s)
                 with open('online.txt', 'a') as f:
                     f.write('%s\n' % s)

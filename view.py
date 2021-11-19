@@ -3,7 +3,7 @@ from tkinter import ttk
 
 import onlinereader
 
-c = onlinereader.read()
+c = onlinereader.read('last7days')
 
 
 def calc_kw(d, h):
