@@ -10,9 +10,9 @@ def calc_kw(d, h):
     return (
         dict() if c[h][d] == 0
         else dict(background='red') if c[h][d] < 900
-        else dict(background='red2') if c[h][d] < 1800
-        else dict(background='red3') if c[h][d] < 2700
-        else dict(background='red4')
+        else dict(background='green') if c[h][d] < 1800
+        else dict(background='cyan') if c[h][d] < 2700
+        else dict(background='blue')
     )
 
 
